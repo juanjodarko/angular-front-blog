@@ -1,14 +1,18 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-3">
-      <div class="rounded white-box">
-        <p>Home</p>
-      </div>
+    <div class="col-sm text-center">
+      <app-profile-badge></app-profile-badge>
     </div>
-    <div class="col-md-9">
-      <div *ngFor="let post of posts" class="rounded white-box">
-        <h3>{{post.title}}</h3>
-        <small>{{post.created_at | date }}</small>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="rounded white-box">
+        <div class="container">
+          <div class="row ">
+            <app-about class="col-md-8"></app-about>
+            <app-contact class="col-md-4"></app-contact>
+          </div>
+        </div>
       </div>
     </div>
   </div>

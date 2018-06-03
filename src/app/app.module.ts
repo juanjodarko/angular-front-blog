@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -14,6 +15,9 @@ import { PostsComponent } from './posts/posts.component';
 import { PostsService } from './posts/posts.service';
 import { PostsListComponent } from './posts/posts-list/posts-list.component';
 import { PostComponent } from './posts/post/post.component';
+import { ProfileBadgeComponent } from './profile-badge/profile-badge.component';
+import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -23,12 +27,16 @@ import { PostComponent } from './posts/post/post.component';
     NavigationBarComponent,
     PostsComponent,
     PostsListComponent,
-    PostComponent
+    PostComponent,
+    ProfileBadgeComponent,
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [
     PostsService
